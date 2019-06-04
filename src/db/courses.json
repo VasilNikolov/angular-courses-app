@@ -1,0 +1,56 @@
+[
+  {
+    "guid": "505f0549-6f00-4ac7-8aa9-66eab75647a0",
+    "image": "https://via.placeholder.com/200x100",
+    "rating": [],
+    "title": "Excepteur",
+    "description": "Incididunt veniam et aliqua magna aliquip fugiat eiusmod laboris non officia officia. Do ullamco quis minim reprehenderit duis excepteur ea ad magna duis. Amet pariatur excepteur id occaecat eu ad ipsum cupidatat enim non.\r\n",
+    "dateCreated": "2015-06-23T05:46:10",
+    "joinedUsers": []
+  },
+  {
+    "guid": "7a835e99-4547-4a7f-b1de-4f3bd8feaef8",
+    "image": "https://via.placeholder.com/200x100",
+    "rating": [],
+    "title": "Ut",
+    "description": "Consectetur occaecat tempor est voluptate deserunt occaecat ea deserunt dolore nulla. Labore cillum sit aliqua nostrud mollit excepteur do dolore commodo duis anim eu. Quis veniam irure amet excepteur in ullamco. Pariatur do nulla elit qui mollit ipsum est enim ex dolore reprehenderit cupidatat tempor.\r\n",
+    "dateCreated": "2018-11-21T06:06:55",
+    "joinedUsers": []
+  },
+  {
+    "guid": "fbaf8dc2-8277-4994-845c-91191285513b",
+    "image": "https://via.placeholder.com/200x100",
+    "rating": [],
+    "title": "Riusmod",
+    "description": "Laboris in non eiusmod enim eu magna. Amet adipisicing exercitation eiusmod officia cillum eu tempor anim. Dolore dolor voluptate ut cupidatat amet dolore.",
+    "dateCreated": "2015-03-22T04:16:23",
+    "joinedUsers":  []
+  },
+  {
+    "guid": "2895322f-3074-4c75-8903-bbcaacfa72fa",
+    "image": "https://via.placeholder.com/200x100",
+    "rating": [],
+    "title": "Mollit",
+    "description": "Officia cillum cupidatat magna amet. Exercitation ea dolor ad aute ullamco est consectetur sunt do anim minim duis non. Proident quis do excepteur culpa. Adipisicing elit dolore laboris nisi enim. Commodo fugiat velit exercitation culpa cillum veniam ad magna incididunt aliquip ad esse aliqua commodo.\r\n",
+    "dateCreated": "2016-01-10T06:20:54",
+    "joinedUsers":  []
+  },
+  {
+    "guid": "c10fd3db-50dd-428d-9498-4735aff49322",
+    "image": "https://via.placeholder.com/200x100",
+    "rating": [],
+    "title": "Cillum",
+    "description": "Voluptate aliqua et Lorem cillum sit sint voluptate laboris. Amet aliqua veniam minim anim ad laborum voluptate eu ex magna. Cupidatat ipsum excepteur deserunt veniam aute aliqua reprehenderit ut aute eu sint. Esse nostrud excepteur anim quis irure nostrud.\r\n",
+    "dateCreated": "2016-06-07T10:26:49",
+    "joinedUsers":  []
+  },
+  {
+    "guid": "c10fd3db-50dd-428d-9498-bbcaacfa72fa",
+    "image": "https://via.placeholder.com/200x100",
+    "rating": [],
+    "title": "Coyote",
+    "description": "Reprehenderit quis cillum sint deserunt cillum anim ullamco reprehenderit nostrud laboris velit excepteur. Esse pariatur nulla esse elit eu laborum cillum in.\n",
+    "dateCreated": "2016-06-07T10:26:49",
+    "joinedUsers":  []
+  }
+]

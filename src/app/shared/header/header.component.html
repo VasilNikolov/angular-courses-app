@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+  <a class="navbar-brand" href="javascript:;" routerLink="/auth/home">
+    <img src="/assets/images/angular.svg" width="30" height="30" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav  mr-auto">
+      <a class="nav-link"
+         href="javascript:;"
+         routerLink="/auth/home"
+         routerLinkActive="active">Home</a>
+      <a class="nav-link"
+         href="javascript:;"
+         routerLink="/courses"
+         routerLinkActive="active">Courses</a>
+
+      <ng-container *loggedIn="true">
+        <ng-container *permissions="Role.ADMIN">
+          <a class="nav-link"
+             href="javascript:;"
+             routerLink="/admin/course"
+             routerLinkActive="active"
+             [routerLinkActiveOptions]="{exact:true }">Add Course</a>
+
+          <a class="nav-link"
+             href="javascript:;"
+             routerLink="/admin/users"
+             routerLinkActive="active">Users</a>
+        </ng-container>
+      </ng-container>
+    </div>
+
+    <div class="navbar-nav">
+      <a class="nav-link"
+         href="javascript:;"
+         routerLink="/auth/login"
+         *loggedIn="false"
+         routerLinkActive="active">Login</a>
+
+      <a class="nav-link"
+         href="javascript:;"
+         routerLink="/auth/register"
+         *loggedIn="false"
+         routerLinkActive="active">Register</a>
+
+      <button class="btn btn-light" type="button" (click)="onLogout()" *loggedIn="true">Logout</button>
+    </div>
+  </div>
+</nav>

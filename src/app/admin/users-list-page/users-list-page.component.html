@@ -1,0 +1,33 @@
+<div class="container">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Date of registration</th>
+        <th scope="col">Role</th>
+        <th scope="col">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users;index as index">
+        <th scope="row">{{index + 1}}</th>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.registered | date}}</td>
+        <td>{{user.role}}</td>
+        <td>
+          <button type="button"
+                  class="btn btn-block"
+                  [ngClass]="{'btn-primary': user.isBlocked,
+                              'btn-danger': !user.isBlocked}"
+                  (click)="onToggleBlocked(user.guid)">
+            <ng-container *ngIf="!user.isBlocked">Block user</ng-container>
+            <ng-container *ngIf="user.isBlocked">Unblock user</ng-container>
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+</div>

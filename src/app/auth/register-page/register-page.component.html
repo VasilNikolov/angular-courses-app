@@ -1,0 +1,27 @@
+<div class="container">
+
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="alert alert-danger mt-3" role="alert" *ngIf="registerForm.errors?.registerError">
+      <span>Registration failed.</span>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" formControlName="email" placeholder="Enter your email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" formControlName="name" placeholder="Enter your name" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" formControlName="password" placeholder="Enter your password" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="repeatPassword">Repeat Password</label>
+      <input id="repeatPassword" type="password" name="repeatPassword" formControlName="repeatPassword" placeholder="Repeat your password" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!registerForm.valid">Register</button>
+  </form>
+</div>

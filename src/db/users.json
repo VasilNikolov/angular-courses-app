@@ -1,0 +1,56 @@
+[
+  {
+    "guid": "77c9ca89-b7d9-4727-9dc6-0c92b5fae5d7",
+    "isBlocked": true,
+    "name": "Merritt Whitfield",
+    "email": "merrittwhitfield@vinch.com",
+    "password": "1",
+    "registered": "2017-07-25T01:51:52",
+    "role": "USER"
+  },
+  {
+    "guid": "58f9374f-6355-477c-a64d-f18389888302",
+    "isBlocked": true,
+    "name": "Reva Clark",
+    "email": "revaclark@vinch.com",
+    "password": "1",
+    "registered": "2017-01-27T10:18:31",
+    "role": "USER"
+  },
+  {
+    "guid": "c658e42f-64c8-4ff5-9ea6-edc15f3f63be",
+    "isBlocked": false,
+    "name": "Lorena Yates",
+    "email": "lorenayates@vinch.com",
+    "password": "1",
+    "registered": "2016-01-14T03:07:30",
+    "role": "USER"
+  },
+  {
+    "guid": "f32323df-8679-429d-9abf-1a3ff5b17d56",
+    "isBlocked": false,
+    "name": "Moran Wynn",
+    "email": "moranwynn@vinch.com",
+    "password": "1",
+    "registered": "2014-11-20T09:45:21",
+    "role": "USER"
+  },
+  {
+    "guid": "0096dc1a-95aa-4537-baa6-a497d4dd948f",
+    "isBlocked": true,
+    "name": "Flynn Pearson",
+    "email": "flynnpearson@vinch.com",
+    "password": "1",
+    "registered": "2016-02-18T05:10:46",
+    "role": "USER"
+  },
+  {
+    "guid": "68584baf-95a6-47a6-a74c-38742c767f4a",
+    "isBlocked": false,
+    "name": "Estrada Aguilar",
+    "email": "admin@admin",
+    "password": "1",
+    "registered": "2019-05-29T07:23:55",
+    "role": "ADMIN"
+  }
+]

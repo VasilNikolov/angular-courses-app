@@ -1,0 +1,4 @@
+<app-course-form [type]="CourseFormType.EDIT"
+                 [formData]="course"
+                 (successSubmit)="onSubmit($event)"
+                 (delete)="onDeleteCourse($event)"></app-course-form>

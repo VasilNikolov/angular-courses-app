@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <img [src]="course.image" class="img-fluid w-100 rounded" alt="">
+    </div>
+    <div class="col-sm-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{course.title}}</h5>
+          <p class="card-text">{{course.description}}</p>
+          <ng-container *loggedIn="true">
+            <div class="lead text-center my-4">Rate {{course.rating | rating}}</div>
+
+            <div class="rate-wrapper mb-3 text-center" *ngIf="!userHasRated">
+              <span class="font-weight-bold d-block">Rate this course</span>
+              <button type="button" class="btn btn-warning btn-sm mr-2" *ngFor="let rate of maxCourseRate; index as index" (click)="onRateCourse(index + 1)">{{index + 1}}</button>
+            </div>
+
+            <button type="button" class="btn btn-success btn-block" (click)="onJoinCourse()" [disabled]="isCourseJoined">
+              <ng-container *ngIf="!isCourseJoined">Join Course</ng-container>
+              <ng-container *ngIf="isCourseJoined">Course joined</ng-container>
+            </button>
+
+            <button type="button" class="btn btn-success btn-block" (click)="onJoinCourse()" [disabled]="isCourseJoined">
+              <ng-container *ngIf="!isCourseJoined">Join Course</ng-container>
+              <ng-container *ngIf="isCourseJoined">Course joined</ng-container>
+            </button>
+
+            <ng-container *permissions="Role.ADMIN">
+              <hr/>
+              <button type="button" class="btn btn-secondary card-link" [routerLink]="['/admin/course', course.guid]">Edit Course</button>
+              <button type="button" class="btn btn-danger card-link float-right" (click)="onDeleteCourse(course.guid)">Delete course</button>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

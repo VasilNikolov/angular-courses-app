@@ -1,0 +1,15 @@
+<div class="card">
+  <a href="javascript:;" [routerLink]="['/courses/details/', courseItem.guid]">
+    <div class="img-wrapper">
+      <img [src]="courseItem.image" class="card-img-top img-fluid">
+    </div>
+  </a>
+  <div class="card-body">
+    <h5 class="card-title">{{courseItem.title}}</h5>
+    <p class="card-text">{{courseItem.description}}</p>
+  </div>
+  <div class="card-footer text-muted">
+    <a href="javascript:;"  [routerLink]="['/courses/details/', courseItem.guid]" class="card-link">Show more</a>
+    <span class="float-right">{{courseItem.dateCreated | date}}</span>
+  </div>
+</div>
